@@ -9,11 +9,13 @@ app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   res.render('index', {
+    pagename : "index",
     title : "Halooo"
   });
 });
 app.get('/pengajuan', (req, res) => {
   res.render('pengajuan', {
+    pagename : "pengajuan",
     title : "Halooo"
   });
 });
